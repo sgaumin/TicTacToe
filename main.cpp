@@ -88,33 +88,33 @@ int main()
 
 	// Music
 	sf::Music music;
-	music.openFromFile("Background.wav");
+	music.openFromFile("Sounds/Background.wav");
 	music.setVolume(30);
 	music.setLoop(true);	
 	music.play();
 
 	// Sounds
 	sf::SoundBuffer buffer1;
-	buffer1.loadFromFile("Victory.wav");
+	buffer1.loadFromFile("Sounds/Victory.wav");
 	sf::Sound sndVictory;
 	sndVictory.setBuffer(buffer1);
 	sndVictory.setVolume(70);
 
 	sf::SoundBuffer buffer2;
-	buffer2.loadFromFile("Draw.wav");
+	buffer2.loadFromFile("Sounds/Draw.wav");
 	sf::Sound sndDraw;
 	sndDraw.setBuffer(buffer2);
 	sndDraw.setVolume(70);
 
 	sf::SoundBuffer buffer3;
-	buffer3.loadFromFile("Hit.wav");
+	buffer3.loadFromFile("Sounds/Hit.wav");
 	sf::Sound sndHit;
 	sndHit.setBuffer(buffer3);
 	sndHit.setVolume(100);
 	
 	// Text
 	sf::Font font;
-	font.loadFromFile("TheBrooklynSmooth.otf");
+	font.loadFromFile("Font/TheBrooklynSmooth.otf");
 	
 	sf::Text text;
 	text.setFont(font);
